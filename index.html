@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+<script></script>
+<meta charset="utf-8">
+<title>Clan iMBA</title>
+
+<style>
+body{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	overflow: hidden;
+	height: 100%;
+	max-height: 100%;
+	text-align: center;
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+
+}
+
+#container{
+	position:relative;
+	width:100%;
+	height:100vh;
+	padding:0;
+	margin:0;	
+}
+	
+#bgSky{
+	position:absolute;
+	z-index:1;
+	width:100vw;
+	height:100vh;
+	background-image:url('clanimbabg/clanimbasky.png');
+	background-position:top;
+	background-repeat:no-repeat;
+	background-size: cover;
+
+}
+
+#bgFg{
+	position:absolute;
+	z-index:3;
+	width:100vw;
+	height:100vh;
+	background-image:url('clanimbabg/clanimbamainbg.png');
+	background-position:top;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#bgWords{
+	animation-duration: 1s;
+	animation-name: animateTitle;
+	animation-direction: normal;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+	
+  -webkit-animation-duration: 1s;
+	-webkit-animation-name: animateTitle;
+	-webkit-animation-direction: normal;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+	
+
+	position:absolute;
+	top:10px;
+	right:-1600px;
+	z-index:2;
+	width:78vw;
+	min-height:30vh;
+	background-image:url('clanimbabg/clanimba.png');
+	background-position:top;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+@keyframes animateTitle {
+	0% {
+		right:-1600px;
+	}
+	50% {
+		right:0;
+	}
+	75% {
+		transform: rotate(-5deg);
+		transform-origin: bottom left;
+	}
+	100% {
+		transform: rotate(0deg);
+    right: 0px;
+	}
+}
+
+
+
+div#header{
+	position: absolute;
+	width: 100%;
+	border-bottom: 1px solid black;
+	top: 0px;
+	left: 0px;
+	height: 150px;
+	overflow: hidden;
+	background-color: #7FACD9;
+}
+
+#loader{
+  width:100%;
+  height: 100%;
+  position:absolute;
+  background-color: #000000;
+  z-index: 100;
+}
+
+.hide{
+  animation-name: hides;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: hides;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes hides{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: .4;
+    transform: translateY(-1500px);
+    display:none;
+  }
+}
+
+
+#logoSpin{
+  width: 15%;
+  height: 25%;
+  position: absolute;
+  left: 41%;
+  top: 37%;
+  background: url('skull2.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  -webkit-animation-name: loading;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+}
+
+@keyframes loading{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes loading{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(359deg);
+  }
+}
+
+div#formWrap{
+	position:absolute;
+	z-index:10;
+	top:50%;
+	width:auto;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	padding:5px 0px;
+	background-color:rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	padding:20px 60px;
+}
+
+input{
+	width:300px;
+}
+	
+div#footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 15px;
+	border-top: 1px solid grey;
+	overflow: hidden;
+	font-size:13px;
+	background-color: lightgray;
+}
+div#title{
+	position:absolute;
+	top:9%;
+	width:100%;
+	height:200px;
+	font-size:105px;
+}
+#submit{
+	background:    #6fa8dc;
+	background:    -webkit-linear-gradient(#6fa8dc, #0b5394);
+	background:    linear-gradient(#6fa8dc, #0b5394);
+	border-radius: 5px;
+	padding:       8px 20px;
+	color:         #ffffff;
+	display:       inline-block;
+	font:          normal 700 14px;
+	text-align:    center;
+	text-shadow:   1px 1px #000000;
+}
+#submitG{
+	background:    #8ae462;
+	background:    -webkit-linear-gradient(#8ae462, #489e22);
+	background:    linear-gradient(#8ae462, #489e22);
+	border-radius: 5px;
+	padding:       8px 20px;
+	color:         #ffffff;
+	display:       inline-block;
+	font:          normal 700 14px;
+	text-align:    center;
+	text-shadow:   1px 1px #000000;
+}
+span{
+	color:white;
+	font-weight:bold;
+}
+
+</style>
+<script>
+
+function guestLogin(){
+	document.getElementById("username").value = "Guest";
+	document.getElementById("password").value = "guest123";
+};
+
+</script>
+</head>
+
+<body>
+
+<div id="loader">
+  <div id="logoSpin"></div>
+</div>
+
+<div id="container">
+
+  <div id="bgSky"></div>
+  <div id="bgWords"></div>
+  <div id="bgFg"></div>
+
+	<form action="login.php" name="mainForm" method="POST">
+		<div id="formWrap">
+			<span>Username</span>
+			<br/>
+			<input type="text" name="username" id="username" class="formInput" />
+			<br/>
+			<br/>
+			<span>Password</span>
+			<br/>
+			<input type="password" name="password" id="password" class="formInput" />
+			<br/>
+			<br/>
+			<input type="submit" id="submit" value="Login" />
+			<br/>
+			<br/>
+			<input type="submit" id="submitG" value="Login As Guest" onclick="guestLogin()" />
+		</div>
+	</form>
+</div>
+</body>
+<script>
+  var spinner = document.getElementById('logoSpin');
+  var loader = document.getElementById('loader');
+  var container = document.getElementById('container');
+    container.classList.add('js-loading');
+    window.addEventListener('load', function(){
+      spinner.classList.add('pageReady');
+      loader.classList.add('hide');
+      container.classList.remove('js-loading');
+    });
+      
+</script>
+</html>

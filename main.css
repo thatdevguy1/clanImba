@@ -1,0 +1,414 @@
+div#header{
+	position:relative;
+	height:175px;
+	width:100%;
+	margin: 0px;
+	background:rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+	background:rgba(0, 0, 0, 0.589);
+	border-bottom: solid 4px rgb(104, 1, 1);
+}
+div#contentWrap{
+	position:relative;
+	top:75px;
+	left:0px;
+	width:100%;
+	min-height:100%;
+	margin: 0;
+	padding: 0px;
+	
+}
+body{
+	background-image: url("hordebg.jpg");
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	background-color:black;
+	margin: 0px;
+	padding: 0px;
+}
+div#content{
+	position:relative;
+	width:1200px;
+	margin:20px auto;
+}
+div.link{
+	display:inline-block;
+	width:105px;
+	height:25px;
+	padding-top:10px;
+	text-align:center;
+	color:white;
+}
+
+.link :hover{
+	color: rgb(146, 2, 2);
+}
+
+p{
+	transition: color .2s ease-in;
+}
+
+div#linkWrap{
+	position: absolute;
+	width: 440px;
+	left:50%;
+	transform: translateX(-50%);
+	bottom:15px;
+	
+}
+div#userInfo{
+	position:absolute;
+	height:50px;
+	right:10px;
+	top:0px;
+	color:rgb(168, 1, 1);
+}
+
+#userInfo > p {
+	float: right;
+}
+
+div#logo{
+	position:absolute;
+	height:100px;
+	width:150px;
+	text-align:center;
+	padding-top:30px;
+	top:0px;
+	left:50%;
+	transform: translateX(-50%);
+	background-image:url("skull2.png");
+	background-position:left;
+	background-size:contain;
+	background-repeat:no-repeat;
+	
+}
+.article{
+	display:block;
+	width:98%;
+	margin:10px auto;
+	background-color:black;
+	color:white;
+	height:400px;	
+	background:rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+    background:rgba(0, 0, 0, 0.6);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+div#article1{
+	background-image:url("WorldBossArticle.jpg");
+}
+div#article2{
+	background-image:url("rtk.jpg");
+	
+}
+
+div#blizzCon{
+	background: url('BlizzCon.png');
+	background-position: center;
+	background-size:contain;
+	background-repeat: no-repeat;
+}
+a{
+	text-decoration:none;
+}
+iframe{
+	margin:0 auto;
+	width: 100%;
+	height: 600px;
+}
+div#chat{
+	position:absolute;
+	right:20px;
+	top:19px;
+	background-color:black;
+	width:340px;
+	height:93.5%;
+	z-index:20;
+	color:white;
+	opacity:.6;
+}
+div.forumTopic{
+	position:relative;
+	display: block;
+	width:98%;
+	height:70px;
+	background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+    background: rgba(255, 255, 255, 0.1);
+	margin:10px auto;
+	color:white;
+	padding:25px 10px;
+	box-sizing:border-box;
+}
+div.forumTopicC{
+	position:relative;
+	display: block;
+	width:98%;
+	height:70px;
+	margin:10px auto;
+	color:white;
+	padding:25px 10px;
+	box-sizing:border-box;
+}
+div#topicTitle{
+	position:absolute;
+	left:15px;
+	top:15px;
+	width:80%;
+	font-size:55px;
+}
+#newBtn{
+	position:absolute;
+	right:20px;
+	top:10px;
+	width:125px;
+	height:50px;
+	opacity:.8;
+}
+div#byUser{
+	position:absolute;
+	right:350px;
+	width:100px;
+	top:25px;
+}
+div#datePosted{
+	position:absolute;
+	right:20px;
+	width:100px;
+	top:25px;
+}
+#postBtn{
+	width:100%;
+	height:100%;
+}
+.userinfo{
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:200px;
+	width:250px;
+}
+.userPostInfo{
+	display:block;
+	height:20px;
+	width:100%;
+	padding:7px 15px;
+}
+.datePostInfo{
+	display:block;
+	height:20px;
+	width:100%;
+	padding:7px 15px;
+}
+div.post{
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:78.5%;
+	min-height:300px;
+}
+.postSlot{
+	position:relative;
+	display:block;
+	width:100%;
+	height:300px;
+	border-bottom:solid black 1px;
+	background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+    background: rgba(255, 255, 255, 0.1);
+	color:white;
+	margin:10px 0px;
+}
+#msgBox{
+	position:relative;
+	display:block;
+	width:100%;
+	height:360px;
+	margin:0 auto;
+	padding-top:20px;
+}
+#submitPost{
+	position:absolute;
+	-webkit-border-radius: 2;
+	-moz-border-radius: 2;
+	border-radius: 2px;
+	font-family: Arial;
+    color: #ffffff;
+	font-size: 20px;
+	background: #f00303;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, 325%);
+	opacity:.8;
+}
+textarea{
+	resize:none;
+	overflow:hidden;
+}
+#sub{
+	position:absolute;
+	background: none;
+    border: none;
+	cursor:pointer;
+    text-decoration: none;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	opacity:0;
+}
+.abittotheleft{
+	position:absolute;
+	left:-10px;
+}
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.formTitle{
+	font-weight:bold;
+	display:table;
+	margin:0 auto;
+	line-height:40px;
+	color:white;
+}
+.formInput{
+	position:relative;
+	width:50%;
+	height:25px;
+	margin:0 auto;
+	-moz-box-shadow:    0px 1px 2px 1px #ccc;
+	-webkit-box-shadow: 0px 1px 2px 1px #ccc;
+	box-shadow:         0px 1px 2px 1px #ccc;
+	display:table;
+	
+}
+.formTextArea{
+	position:relative;
+	display:block;
+	width:600px;
+	height:300px;
+	margin:0 auto;
+}
+#textAreaInput{
+	height:300px;
+	max-height:300px;  
+}
+#submit{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, 500%);
+	height:55px;
+	width:150px;
+	border-radius:10px;
+	font-weight:bold;
+	
+}
+.name{
+	position:relative;
+	display:inline-block;
+	margin: 10px 0 0 20px;
+	width:150px;
+	bottom:30px;
+	text-align: center;
+}
+.class{
+	position:relative;
+	display:inline-block;
+	margin: 10px 0 0 20px;
+	width:150px;
+	bottom:30px;
+	text-align: center;
+
+}
+.thumbnail{
+	position:relative;
+	display:inline-block;
+	width:150px;
+}
+.level{
+	position:relative;
+	display:inline-block;
+	width:150px;
+	margin: 10px 0 0 20px;
+	bottom:30px;
+	text-align: center;
+}
+.member{
+	width: 100%;
+	margin:10px 0 0 0;
+	background: rgba(255, 255, 255, 0.1);
+	color:white;
+}
+
+#titleBar{
+	width:100%;
+	background: rgba(255, 255, 255, 0.1);
+	color:white;
+}
+
+.titleInfo{
+	position:relative;
+	display:inline-block;
+	width:165px;
+	text-align: center;
+}
+
+#nameTitle{
+	margin:0 0 0 170px;
+}
+
+@media only screen and (max-width: 1200px) {
+	div#content{
+		width:100%;
+	}
+	.article{
+		height: 45vw;
+	}
+}
+
+@media only screen and (max-width: 725px) {
+	.titleInfo{
+		width:75px;
+	}
+	.name{
+		width:63px
+	}
+	.class{
+		width:63px
+	}
+	.level{
+		width:63px
+	}
+	.thumbnail{
+		width:90px;
+	}
+
+	#nameTitle{
+		margin: 0 0 0 110px;
+	}
+
+	#levelTitle{
+		width:84px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	div#content{
+		width:400px;
+	}
+	div#contentWrap{
+		width:400px;
+	}
+	div#header{
+		width:400px;
+	}
+
+
+}
+
